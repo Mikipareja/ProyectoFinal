@@ -5,12 +5,12 @@ const bookRoutes = require('./routes/bookRoutes');
 const mongoose = require('./config');
 
 
-const app = expreess();
+const app = express();
 
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('a/api', bookRutes  );
+app.use('/api', bookRoutes);
 
 
 const PORT = process.env.PORT || 3000;
